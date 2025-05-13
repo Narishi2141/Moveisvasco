@@ -1,3 +1,4 @@
+
 .logo-img{
     max-width: 240px;
     min-height: 50px;
@@ -46,4 +47,9 @@ background-size: cover; /* Resize the background image to cover the entire conta
     .footer-links{
         margin: 0 auto !important;
     }
+}
+
+h2, h3{
+font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
 }
