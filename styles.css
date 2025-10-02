@@ -107,24 +107,33 @@ font-optical-sizing: auto;
 
 .section-padding {
   padding-top:80px;
-  padding-bottom:80px
+  padding-bottom:80px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-padding {
     padding-top:70px;
-    padding-bottom:70px
+    padding-bottom:70px;
+    padding-left: 100px!important;
+    padding-right: 100px!important;
+    
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .section-padding {
     padding-top:50px;
-    padding-bottom:50px
+    padding-bottom:50px;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
   }
 }
 @media (max-width: 575px) {
   .section-padding {
     padding-top:50px;
-    padding-bottom:50px
+    padding-bottom:50px;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
   }
 }
 
@@ -271,7 +280,7 @@ font-optical-sizing: auto;
 }
 
 .hero-bg {
-  background-image: url('/Images/familia\ Vasco.png'); 
+  background-image: url('/Images/Untitled\ design\ \(4\).png'); 
   background-size: cover;
   background-position: 50% 20%;
   background-repeat: no-repeat;
@@ -287,7 +296,8 @@ font-optical-sizing: auto;
 
 .banner-padding {
   padding-top:150px;
-  padding-bottom:150px
+  padding-bottom:150px;
+  
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .banner-padding {
@@ -306,4 +316,118 @@ font-optical-sizing: auto;
     padding-top:50px;
     padding-bottom:50px
   }
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card-vm img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-vm{
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(37, 9, 14, 0.18);
+  border: none!important;
+  border-radius: 3xp!important;
+  background-color: rgba(253, 2, 31, 0.285)!important;
+  width:250px ;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .card-vm {
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .card-vm {
+    width: 250px;
+  }
+}
+@media (max-width: 575px) {
+  .card-vm {
+     width: 250px;
+  }
+}
+
+
+.carousel-innervm {
+  padding: 1em;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+@media (max-width:900px) {
+  .card img {
+    padding: 1rem!important;
+  }
+}
+
+
+.hover {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60%;
+}
+
+.hover-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s;
+}
+
+
+.hover-content {
+  position: relative;
+  z-index: 99;
+}
+
+
+/* DEMO 1 ============================== */
+.hover-1 img {
+  width: 105%;
+  position: absolute;
+  top: 0;
+  left: -5%;
+  transition: all 0.3s;
+}
+
+.hover-1-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  transition: all 0.4s;
+}
+
+.hover-1 .hover-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hover-1-description {
+  transform: translateY(0.5rem);
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.hover-1:hover .hover-1-content {
+  bottom: 2rem;
+}
+
+.hover-1:hover .hover-1-description {
+  opacity: 1;
+  transform: none;
+}
+
+.hover-1:hover img {
+  left: 0;
+}
+
+.hover-1:hover .hover-overlay {
+  opacity: 0;
 }
