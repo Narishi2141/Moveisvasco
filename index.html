@@ -31,7 +31,7 @@
 <header class="header" >
   <nav class="navbar-light sticky-top navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand d-lg-none" href="#">
+    <a class="navbar-brand d-lg-none" href="https://moveisvasco.com/">
       <img src="/Images/Page 3 new color.png" style="max-width: 180px; min-height: 60px;" alt="Moveis Vasco Logo">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,11 +87,11 @@
         <div class="carousel-caption d-flex flex-column justify-content-center h-100 mx-auto"> 
           <h1 class="fw-bold py-3">Do mais clássico ao ultra moderno — <br> e tudo feito à medida, ao teu gosto.</h1> 
            <p>
-            <a class="btn btn-lg btn-danger rounded-pill d-none d-lg-inline fs-3" href="#">Mais Sobre
+            <a class="btn btn-lg btn-danger rounded-pill d-none d-lg-inline fs-3" href="/sobre.html">Mais Sobre
               <i class="bi bi-chevron-right"></i>
 
             </a>
-            <a class="btn btn-danger rounded-pill d-lg-none" href="#">Mais Sobre
+            <a class="btn btn-danger rounded-pill d-lg-none" href="/sobre.html">Mais Sobre
               <i class="bi bi-chevron-right"></i>
 
             </a>
@@ -105,10 +105,10 @@
         <div class="carousel-caption d-flex flex-column justify-content-center h-100 mx-auto"> 
           <p class="fw-bold py-3 h1">Qualidade e confiança desde 1989.</p> 
            <p>
-            <a class="btn btn-lg btn-danger rounded-pill d-none d-lg-inline fs-3" href="#">Whatsapp
+            <a class="btn btn-lg btn-danger rounded-pill d-none d-lg-inline fs-3" href="https://wa.me/+351%20914%20609%20283">Whatsapp
               <i class="bi bi-chevron-right"></i>
             </a>
-            <a class="btn btn-danger rounded-pill d-lg-none" href="#">Whatsapp
+            <a class="btn btn-danger rounded-pill d-lg-none" href="https://wa.me/+351%20914%20609%20283">Whatsapp
               <i class="bi bi-chevron-right"></i>
             </a>
           </p> 
@@ -121,11 +121,11 @@
         <div class="carousel-caption d-flex flex-column justify-content-center h-100 mx-auto"> 
           <p class="fw-bold py-3 h1">Móveis Vasco: <br> O estilo de sempre, com a inovação de hoje.</p> 
            <p>
-            <a class="btn btn-lg btn-danger rounded-pill d-none d-lg-inline fs-3" href="#">Mais Sobre
+            <a class="btn btn-lg btn-danger rounded-pill d-none d-lg-inline fs-3" href="/galeria.html">Mais Sobre
               <i class="bi bi-chevron-right"></i>
 
             </a>
-            <a class="btn btn-danger rounded-pill d-lg-none" href="#">Mais Sobre
+            <a class="btn btn-danger rounded-pill d-lg-none" href="/galeria.html">Mais Sobre
               <i class="bi bi-chevron-right"></i>
 
             </a>
@@ -144,8 +144,6 @@
   </button>
 </div>
 
-
-
 <section class="section-padding">
             <div class="container-fluid px-3 mx-2">
               <p class="h2 py-3" style="font-family: Playfair Display, serif;">Qualidade de topo, durabilidade para a vida, design contemporâneo e conforto à séria</p>
@@ -157,19 +155,20 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <!-- Counter Up -->
                                     <div class="single" style="margin-bottom: 30px;">
-                                      <div class="counter" data-start="200" data-speed="500">532
+                                      
+                                      <div class="counter" data-start="996" data-speed="500">996
 
                                       </div>
-                                      <p class="fs-3">Muitos clientes Felizes</p>
+                                      <p class="fs-3">Clientes Felizes</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <!-- Counter Up -->
                                     <div class="single2" style="margin-bottom: 30px;">
-                                      <div class="counter" data-start="100" data-speed="1000">350
+                                      <div class="counter" data-start="4998" data-speed="1000">5000
 
                                       </div>
-                                      <p class="fs-3">e Casas Transformadas</p>
+                                      <p class="fs-3">Casas Transformadas</p>
                                     </div>
                                 </div>
                             </div>
@@ -180,7 +179,7 @@
                         <div class="about-right-cap">
                             <!-- Section Tittle -->
             <p class="lead" >Há mais de 20 anos a transformar casas em lares. Temos mobiliário para todos os estilos — do mais clássico ao ultra moderno — sempre feito por medida, com qualidade de luxo e ao teu gosto. </p> 
-                            <a href="#" class="btn btn-lg btn-danger rounded-pill">Descubra mais<i class="bi bi-chevron-right"></i></a>
+                            <a href="/galeria.html" class="btn btn-lg btn-danger rounded-pill">Descubra mais<i class="bi bi-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -201,7 +200,7 @@
 
     const interval = setInterval(() => {
       value++;
-      counter.textContent = value;
+      counter.textContent = `+${value}`;
     }, speed);
 
     counter.dataset.intervalId = interval;
@@ -232,6 +231,8 @@
   }, options);
 
   counters.forEach(counter => {
+    // Set initial value with +
+    counter.textContent = `+${parseInt(counter.textContent) || 0}`;
     observer.observe(counter);
   });
 </script>
@@ -248,7 +249,7 @@
       </span>
     </h2> 
     <p class="lead">Oferecer o melhor preço para a melhor qualidade. O nosso foco ? Durabilidade, Sustentabilidade, Qualidade e Personalização. </p> 
-    <a href="#" class="btn btn-lg btn-light rounded-pill">Saiba mais<i class="bi bi-chevron-right"></i></a>
+    <a href="/sobre.html" class="btn btn-lg btn-light rounded-pill">Saiba mais<i class="bi bi-chevron-right"></i></a>
   </div> 
   <div class="col-md-5 align-self-center"> 
     <img class="img-fluid" src="Images/cozinha.png"> 
@@ -322,14 +323,12 @@
       </div>
 
       <!-- Button -->
-      <a href="#" class="btn btn-danger btn-lg rounded-pill">Veja Galeria
+      <a href="/galeria.html" class="btn btn-danger btn-lg rounded-pill">Veja Galeria
         <i class="bi bi-chevron-right"></i>
       </a>
     </div>
   </div>
 </section>
-  
-
 
               
 

@@ -33,7 +33,7 @@
 <header class="header" >
   <nav class="navbar-light sticky-top navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand d-md-none" href="#">
+    <a class="navbar-brand d-lg-none" href="https://moveisvasco.com/">
       <img src="/Images/Page 3 new color.png" style="max-width: 180px; min-height: 60px;" alt="Moveis Vasco Logo">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +50,7 @@
          <li class="nav-item mx-1">
           <a class="nav-link hover-underline-animation left" href="/sobre.html">Sobre</a>
         </li>
-        <a class="navbar-brand d-none d-md-block m-0 mx-1" href="https://moveisvasco.com/">
+        <a class="navbar-brand d-none d-lg-block m-0 mx-1" href="https://moveisvasco.com/">
           <img src="/Images/Page 3 new color.png" style="max-width: 200px; min-height: 70px;" alt="Moveis Vasco Logo">
         </a>
         <li class="nav-item mx-1">
@@ -188,14 +188,14 @@
 
 </section>
 
-<div class="container-fluid section-padding">
-  <div class="row featurette p-3">
-  <div class="col-md-7 my-auto ">
+<div class="container-fluid section-padding" style="background-color: #dc3545;">
+  <div class="row featurette padding-row">
+  <div class="col-md-7 my-auto text-white">
     <h2 class="featurette-heading text-start my-2" style="font-family: Playfair Display">Tradição Familiar. <span class="text-muted ">Muito mais do que móveis</span></h2>
     <p class="lead mx-1">Desde 1989, somos uma empresa familiar, fundada e gerida por um pai com os seus filhos e a sua filha, com um compromisso genuíno com qualidade e confiança.<br><br> Localizados em Nogueira da Regedoura, onde criámos raízes, crescemos e educámos os nossos filhos entre móveis e clientes que se tornaram parte da nossa história. <br><br> Mais do que uma loja, somos uma parte da comunidade e dedicamo-nos a continuar a levar conforto e estilo duradouros às casas de quem confia no nosso trabalho.
 </p>
   </div>
-  <div class="col-md-5">
+  <div class="col-md-5 text-center align-self-center">
     <img src="Images/familia Vasco.png" class="img-fluid">
   </div>
   </div>
@@ -208,7 +208,7 @@
 
 
 <section class="section-padding">
-            <div class="container-fluid px-5 mx-2">
+            <div class="container-fluid px-3 mx-2">
               <p class="h2 py-3" style="font-family: Playfair Display, serif;">Qualidade de topo, durabilidade para a vida, design contemporâneo e conforto à séria</p>
                 <div class="row justify-content-between align-items-end">
                     <div class="col-xl-6 col-lg-7 col-md-10">
@@ -218,19 +218,20 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <!-- Counter Up -->
                                     <div class="single" style="margin-bottom: 30px;">
-                                      <div class="counter" data-start="200" data-speed="500">532
+                                      
+                                      <div class="counter" data-start="996" data-speed="500">996
 
                                       </div>
-                                      <p class="fs-3">Muitos clientes Felizes</p>
+                                      <p class="fs-3">Clientes Felizes</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <!-- Counter Up -->
                                     <div class="single2" style="margin-bottom: 30px;">
-                                      <div class="counter" data-start="100" data-speed="1000">350
+                                      <div class="counter" data-start="4998" data-speed="1000">4998
 
                                       </div>
-                                      <p class="fs-3">e Casas Transformadas</p>
+                                      <p class="fs-3">Casas Transformadas</p>
                                     </div>
                                 </div>
                             </div>
@@ -241,7 +242,7 @@
                         <div class="about-right-cap">
                             <!-- Section Tittle -->
             <p class="lead" >Há mais de 20 anos a transformar casas em lares. Temos mobiliário para todos os estilos — do mais clássico ao ultra moderno — sempre feito por medida, com qualidade de luxo e ao teu gosto. </p> 
-                            
+                            <a href="https://www.instagram.com/moveisvasco/" class="btn btn-lg btn-danger rounded-pill">Descubra mais<i class="bi bi-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -262,7 +263,7 @@
 
     const interval = setInterval(() => {
       value++;
-      counter.textContent = value;
+      counter.textContent = `+${value}`;
     }, speed);
 
     counter.dataset.intervalId = interval;
@@ -293,6 +294,8 @@
   }, options);
 
   counters.forEach(counter => {
+    // Set initial value with +
+    counter.textContent = `+${parseInt(counter.textContent) || 0}`;
     observer.observe(counter);
   });
 </script>
@@ -309,8 +312,8 @@
       </span>
     </h2> 
     <p class="lead">Oferecer o melhor preço para a melhor qualidade. O nosso foco ? Durabilidade, Sustentabilidade, Qualidade e Personalização. </p> 
-    <a class="btn btn-light btn-lg px-4 gap-3 rounded-pill" href="tel: +351 914 609 283" role="button">Ligue Agora</a>
-       <a class="btn btn-outline-light btn-lg px-4 rounded-pill" href="mailto: moveis.vasco.silva@gmail.com" role="button">Email</a>
+    <a class="btn btn-light btn-lg px-4 m-2 gap-3 rounded-pill" href="tel: +351 914 609 283" role="button">Ligue Agora</a>
+       <a class="btn btn-outline-light btn-lg px-4 m-2 rounded-pill" href="mailto: moveis.vasco.silva@gmail.com" role="button">Email</a>
   </div> 
   <div class="col-md-5"> 
     <img class="img-fluid" src="Images/cozinha.png"> 

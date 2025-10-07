@@ -115,8 +115,8 @@ font-optical-sizing: auto;
   .section-padding {
     padding-top:70px;
     padding-bottom:70px;
-    padding-left: 100px!important;
-    padding-right: 100px!important;
+    padding-left: 70px!important;
+    padding-right: 70px!important;
     
   }
 }
@@ -429,5 +429,58 @@ font-optical-sizing: auto;
 }
 
 .hover-1:hover .hover-overlay {
-  opacity: 0;
+  opacity: 0.5;
+}
+
+@media (max-width: 900px) {
+  .hover-1:active .hover-1-content {
+  bottom: 2rem;
+}
+
+.hover-1:active .hover-1-description {
+  opacity: 1;
+  transform: none;
+}
+
+.hover-1:active img {
+  left: 0;
+}
+
+.hover-1:active .hover-overlay {
+  opacity: 0.5;
+}
+  
+}
+
+
+.padding-row{
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .padding-row {
+    padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .padding-row {
+    padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .padding-row {
+     padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-top: 10px;
+  }
 }
